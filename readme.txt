@@ -31,3 +31,5 @@
     docker exec -it nodedocker_mongo_1 nodedocker_mongo -u "root" -p "61Faucet"
     npm install mongoose
     
+#  production
+docker-compose  -f docker-compose.yml -f docker-compose.prod.yml up -d --build --no-deps node-app
