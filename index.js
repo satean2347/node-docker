@@ -74,7 +74,7 @@ app.use(session({
 
 app.use(express.json());
 app.get("/api/v1", (req, res) => {
-  res.send("<h1> Hi Test Remote server prodiction</h1>");
+  res.send("<h1> Hellos</h1>");
 
 });
 //localhost:3000/api/v1/posts
