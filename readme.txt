@@ -32,4 +32,11 @@
     npm install mongoose
     
 #  production
-docker-compose  -f docker-compose.yml -f docker-compose.prod.yml up -d --build --no-deps node-app
+docker-compose  -f docker-compose.yml -f docker-compose.prod.yml up -d --build --no-deps 
+
+docker-compose  -f docker-compose.yml -f docker-compose.prod.yml up -d --force-recreate --no-deps   
+
+$ push docker
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml push 
+$ pull docker
+docker-compose  -f docker-compose.yml -f docker-compose.prod.yml pull
