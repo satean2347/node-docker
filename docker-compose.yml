@@ -9,7 +9,7 @@ services:
     restart: always
   node-app:
     build: .
-    image: satean2347/node-app
+    #image: satean2347/node-app
     environment: 
       - POST=3000
     depends_on: 
